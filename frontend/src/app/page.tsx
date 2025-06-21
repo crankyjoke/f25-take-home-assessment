@@ -1,5 +1,7 @@
 import { WeatherForm } from "@/components/weather-form";
 
+import { WeatherID } from "@/components/search-form";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background p-8">
@@ -31,12 +33,10 @@ export default function Home() {
                   TODO: Implement Data Lookup
                 </h3>
                 <p className="text-sm">
-                  This section should allow users to enter an ID and retrieve
-                  stored weather data.
+                  Enter Weather ID to Lookup Weather Data
+
                 </p>
-                <p className="text-xs mt-2 text-muted-foreground/75">
-                  Backend GET /weather/{"{id}"} endpoint is already implemented.
-                </p>
+                <WeatherID/>
               </div>
             </div>
           </div>
